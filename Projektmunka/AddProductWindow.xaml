@@ -1,0 +1,20 @@
+﻿<Window x:Class="Projektmunka.AddProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projektmunka"
+        mc:Ignorable="d"
+        Title="Új termék hozzáadása" Height="350" Width="525">
+    <Grid>
+        <Label Margin="10,20,300,260" FontSize="18">Termék neve</Label>
+        <Label Margin="10,80,300,200" FontSize="18">Cikkszám</Label>
+        <Label Margin="10,140,300,140" FontSize="18">Darabszám</Label>
+        <Label Margin="10,200,300,80" FontSize="18">Fogyasztói ár</Label>
+        <TextBox Name="prodName" Margin="305,20,92,260" KeyUp="tb_KeyUp"></TextBox>
+        <TextBox Name="itemNum" Margin="305,80,92,200" KeyUp="tb_KeyUp"></TextBox>
+        <TextBox Name="stockNum" Margin="305,140,92,140" KeyUp="tb_KeyUp"></TextBox>
+        <TextBox Name="itemPrice" Margin="305,200,92,80" KeyUp="tb_KeyUp"></TextBox>
+        <Button Name="submit" Margin="188,260,188,15" Click="submit_Click">Hozzáad</Button>
+    </Grid>
+</Window>

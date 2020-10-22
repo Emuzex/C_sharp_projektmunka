@@ -1,0 +1,17 @@
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\Projektmunka.Model.dll
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\Projektmunka.Model.pdb
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\MySql.Data.dll
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\Google.Protobuf.dll
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\Zstandard.Net.dll
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\K4os.Compression.LZ4.Streams.dll
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\BouncyCastle.Crypto.dll
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\Ubiety.Dns.Core.dll
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\Renci.SshNet.dll
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\System.Buffers.dll
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\K4os.Compression.LZ4.dll
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\K4os.Hash.xxHash.dll
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\bin\Debug\MySql.Data.xml
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.csprojResolveAssemblyReference.cache
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.dll
+c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.pdb

@@ -37,7 +37,7 @@ namespace Projektmunka
 
         private void submit_Click(object sender, RoutedEventArgs e)
         {
-            ctrl.submitData();
+            ctrl.submitData(prodName, stockNum, itemNum, itemPrice, submit);
         }
 
     }

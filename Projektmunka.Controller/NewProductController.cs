@@ -14,7 +14,7 @@ namespace Projektmunka.Controller
         
         public void validateTextInput(TextBox prodName, TextBox stockNum, TextBox itemNum, TextBox itemPrice, Button submit)
         {
-            if (!(string.IsNullOrEmpty(prodName.Text) || string.IsNullOrEmpty(stockNum.Text) || string.IsNullOrEmpty(itemNum.Text) || string.IsNullOrEmpty(itemPrice.Text)) && (validateNum(stockNum) && validateNum(itemPrice)))
+            if ((validateNum(stockNum) && validateNum(itemPrice)) && !(string.IsNullOrEmpty(prodName.Text) && string.IsNullOrEmpty(stockNum.Text) && string.IsNullOrEmpty(itemNum.Text) && string.IsNullOrEmpty(itemPrice.Text)))
             {
                 submit.IsEnabled = true;
             }
@@ -45,6 +45,17 @@ namespace Projektmunka.Controller
             return isANum;
 
         }
-        public void submitData() { }
+        public void submitData(TextBox prodName, TextBox stockNum, TextBox itemNum, TextBox itemPrice, Button submit) {
+            string name = prodName.Text;
+            int stock = int.Parse(stockNum.Text);
+            string item = itemNum.Text;
+            int price = int.Parse(itemPrice.Text);
+            TextBox[] array = { prodName, stockNum, itemNum, itemPrice };
+            foreach (TextBox tb in array)
+            {
+                tb.Text = "";
+            }
+            submit.IsEnabled = false;
+        }
     }
 }

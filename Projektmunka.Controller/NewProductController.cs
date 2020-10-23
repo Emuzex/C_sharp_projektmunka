@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using Projektmunka.Model;
 
 
 namespace Projektmunka.Controller
@@ -12,9 +13,9 @@ namespace Projektmunka.Controller
     public class NewProductController
     {
         
-        public void validateTextInput(TextBox prodName, TextBox stockNum, TextBox itemNum, TextBox itemPrice, Button submit)
+        public void validateTextInput(TextBox prodName, TextBox stockNum, TextBox itemNum, TextBox itemPrice, TextBox unitMeasurement, Button submit)
         {
-            if ((validateNum(stockNum) && validateNum(itemPrice)) && !(string.IsNullOrEmpty(prodName.Text) && string.IsNullOrEmpty(stockNum.Text) && string.IsNullOrEmpty(itemNum.Text) && string.IsNullOrEmpty(itemPrice.Text)))
+            if ((validateNum(stockNum) && validateNum(itemPrice) && validateNum(unitMeasurement)) && !(string.IsNullOrEmpty(prodName.Text) && string.IsNullOrEmpty(stockNum.Text) && string.IsNullOrEmpty(itemNum.Text) && string.IsNullOrEmpty(itemPrice.Text) && string.IsNullOrEmpty(unitMeasurement.Text)))
             {
                 submit.IsEnabled = true;
             }
@@ -23,8 +24,6 @@ namespace Projektmunka.Controller
 
         }
 
-        // lehet ezt is onkeyup-ra kéne rárakni, viszont csak a két számosnál, és az elején mindig feketére állítja a színt
-        // 
         public bool validateNum(TextBox toBeParsed)
         {
             bool isANum = false;
@@ -45,17 +44,17 @@ namespace Projektmunka.Controller
             return isANum;
 
         }
-        public void submitData(TextBox prodName, TextBox stockNum, TextBox itemNum, TextBox itemPrice, Button submit) {
-            string name = prodName.Text;
-            int stock = int.Parse(stockNum.Text);
-            string item = itemNum.Text;
-            int price = int.Parse(itemPrice.Text);
+        
+        public void submitData(TextBox prodName, TextBox stockNum, TextBox itemNum, TextBox itemPrice, Button submit, ComboBox category, ComboBox unit) {
             TextBox[] array = { prodName, stockNum, itemNum, itemPrice };
+            
+            submit.IsEnabled = false;
+            Database db = new Database();
+            db.addNewProduct(prodName.Text, itemNum.Text, stockNum.Text, itemPrice.Text, category.Text, unit.Text);
             foreach (TextBox tb in array)
             {
                 tb.Text = "";
             }
-            submit.IsEnabled = false;
         }
     }
 }

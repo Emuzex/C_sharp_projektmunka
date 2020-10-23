@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projektmunka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="768" Width="1024">
     <Grid>
-        <Label Width="100" Height="30" Margin="208,90,209,199" Name="l1" ></Label>
+        
         <Button Width="100" Height="30" Name="b1" Click="b1_Click" Margin="184,38,233,251">Termék hozzáadása</Button>
+        <Button Width="100" Height="30" Name="b2" Click="b2_Click" Margin="184,86,233,203">Termék szerkesztése</Button>
     </Grid>
 </Window>

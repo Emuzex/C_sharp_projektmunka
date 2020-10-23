@@ -64,3 +64,5 @@ C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.g.resources
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.Properties.Resources.resources
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csproj.GenerateResource.Cache
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\UpdateProduct.g.cs
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\UpdateProduct.baml

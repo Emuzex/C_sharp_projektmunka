@@ -15,3 +15,20 @@ c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.
 c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.csprojResolveAssemblyReference.cache
 c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.dll
 c:\users\máté\documents\visual studio 2015\Projects\Projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.pdb
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\Projektmunka.Model.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\Projektmunka.Model.pdb
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\MySql.Data.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\Google.Protobuf.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\Zstandard.Net.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\Renci.SshNet.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\System.Buffers.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\MySql.Data.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.csprojResolveAssemblyReference.cache
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.pdb

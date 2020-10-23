@@ -31,13 +31,13 @@ namespace Projektmunka
         private void tb_KeyUp(object sender, KeyEventArgs e)
         {
             
-            ctrl.validateTextInput(prodName, stockNum, itemNum, itemPrice, submit);
+            ctrl.validateTextInput(prodName, stockNum, itemNum, itemPrice, unitMeasure, submit);
             
         }
 
         private void submit_Click(object sender, RoutedEventArgs e)
         {
-            ctrl.submitData(prodName, stockNum, itemNum, itemPrice, submit);
+            ctrl.submitData(prodName, stockNum, itemNum, itemPrice, submit, category, unit);
         }
 
     }

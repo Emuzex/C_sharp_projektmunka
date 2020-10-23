@@ -33,5 +33,11 @@ namespace Projektmunka
             prodWindow.Show();
             
         }
+        private void b2_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateProduct upd = new UpdateProduct();
+            upd.Show();
+            
+        }
     }
 }

@@ -9,35 +9,25 @@ namespace Projektmunka.Model
 {
     public class Database
     {
-        
+
         #region Private properties
-        private string ProductName { get; set; }
-        private string ItemNum { get; set; }
-        private int Stock { get; set; }
-        private int Price { get; set; }
-        private string connStr = "server=localhost;user=root;database=csharpprojekt;port=3306";
+        private string ConnStr = "server=localhost;user=csharp;database=csharpprojekt;port=3306;password=Csharpisfun!97";
         #endregion
 
-        #region Constructor
-        public Database(string productName, string itemNum, int stock, int price) {
-            ProductName = productName;
-            ItemNum = itemNum;
-            Stock = stock;
-            Price = price;
-        }
-        #endregion
-
-        public void addNewProduct()
+        public void addNewProduct(string productName, string itemNum, string stock, string price, string category, string unit)
         {
-            
-            MySqlConnection conn = new MySqlConnection(connStr);
+
+            MySqlConnection conn = new MySqlConnection(ConnStr);
+
             try
             {
-                
+
                 conn.Open();
 
-                string sql = "INSERT INTO products VALUES ('{0}', '{1}', '{2}', '0', '{3}');";
-                MySqlCommand cmd = new MySqlCommand(String.Format(sql,1, 2, 3 ), conn);
+                string sql = "INSERT INTO products VALUES ('{0}', '{1}', '{2}', '{0}', '{3}', '{4}', '{5}');";
+                sql = String.Format(sql, productName, itemNum, stock, price, category, unit);
+                Console.WriteLine(sql);
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
                 MySqlDataReader rdr = cmd.ExecuteReader();
 
                 /*while (rdr.Read())
@@ -52,10 +42,11 @@ namespace Projektmunka.Model
             }
 
             conn.Close();
-           
+
         }
-        public void updateProduct() {
-            MySqlConnection conn = new MySqlConnection(connStr);
+        public void updateProduct()
+        {
+            MySqlConnection conn = new MySqlConnection(ConnStr);
             try
             {
 
@@ -79,7 +70,38 @@ namespace Projektmunka.Model
             conn.Close();
 
         }
-    }
 
+        public void searchProducts(string keyword)
+        {
+            MySqlConnection conn = new MySqlConnection(ConnStr);
+            try
+            {
+
+                conn.Open();
+                StringBuilder returnValue = new StringBuilder();
+                string sql = "SELECT * FROM products WHERE name LIKE '%{0}%';";
+                sql = String.Format(sql, keyword);
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                MySqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    returnValue.Append(rdr[0] + "\n");
+                    // stringet kellene visszaadnia, hogy a Controller be tudja állítani a Label.Text-et
+                    Console.WriteLine(returnValue);
+                    
+                }
+                rdr.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+
+            conn.Close();
+
+        }
+
+    }
 }
 

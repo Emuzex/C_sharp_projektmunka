@@ -11,9 +11,10 @@ namespace Projektmunka.Controller
     public class UpdateProductController
     {
         Database db = new Database();
-        public void searchDatabase(TextBox tb) {
+        public void searchDatabase(TextBox tb, Label result) {
             
-            db.searchProducts(tb.Text);
+            
+            result.Content = db.searchProducts(tb.Text).ToString();
         }
     }
 }

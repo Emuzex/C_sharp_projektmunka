@@ -30,7 +30,7 @@ namespace Projektmunka
         private void searchBox_KeyUp(object sender, KeyEventArgs e)
         {
             TextBox tb = sender as TextBox;
-            ctrl.searchDatabase(tb);
+            ctrl.searchDatabase(tb, searchResults);
         }
     }
 }

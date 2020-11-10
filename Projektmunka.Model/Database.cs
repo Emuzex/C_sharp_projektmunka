@@ -71,14 +71,15 @@ namespace Projektmunka.Model
 
         }
 
-        public void searchProducts(string keyword)
+        public StringBuilder searchProducts(string keyword)
         {
             MySqlConnection conn = new MySqlConnection(ConnStr);
+            StringBuilder returnValue = new StringBuilder();
             try
             {
 
                 conn.Open();
-                StringBuilder returnValue = new StringBuilder();
+                
                 string sql = "SELECT * FROM products WHERE name LIKE '%{0}%';";
                 sql = String.Format(sql, keyword);
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
@@ -86,19 +87,20 @@ namespace Projektmunka.Model
 
                 while (rdr.Read())
                 {
-                    returnValue.Append(rdr[0] + "\n");
-                    // stringet kellene visszaadnia, hogy a Controller be tudja állítani a Label.Text-et
-                    Console.WriteLine(returnValue);
+                    returnValue.Append(rdr[0] + "\n");                   
                     
                 }
+                
                 rdr.Close();
+                
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }
-
+            
             conn.Close();
+            return returnValue;
 
         }
 

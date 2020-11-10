@@ -11,7 +11,7 @@ namespace Projektmunka.Model
     {
 
         #region Private properties
-        private string ConnStr = "server=localhost;user=csharp;database=csharpprojekt;port=3306;password=Csharpisfun!97";
+        private string ConnStr = "server=145.236.9.97;user=csharp;database=csharpprojekt;port=3306;password=Csharpisfun!97";
         #endregion
 
         public void addNewProduct(string productName, string itemNum, string stock, string price, string category, string unit)
@@ -24,7 +24,7 @@ namespace Projektmunka.Model
 
                 conn.Open();
 
-                string sql = "INSERT INTO products VALUES ('{0}', '{1}', '{2}', '{0}', '{3}', '{4}', '{5}');";
+                string sql = "INSERT INTO products VALUES ('{0}', '{1}', '{2}', '0', '{3}', '{4}', '{5}');";
                 sql = String.Format(sql, productName, itemNum, stock, price, category, unit);
                 Console.WriteLine(sql);
                 MySqlCommand cmd = new MySqlCommand(sql, conn);

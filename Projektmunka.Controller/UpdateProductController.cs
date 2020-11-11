@@ -58,26 +58,25 @@ namespace Projektmunka.Controller
         }
         public void setFields(int index, TextBox name, TextBox itemNum, TextBox stock, ComboBox category, ComboBox discount)
         {
+            Product product;
             try
             {
-                Product product = ProductList[index];
-                name.Text = product.Name;
-                itemNum.Text = product.ItemNum;
-                stock.Text = product.Stock;
-                switch (product.Category)
-                {
-                    case "Élelmiszer": category.SelectedIndex = 0; break;
-                    case "Háztartási vegyiáru": category.SelectedIndex = 1; break;
-                    case "Szeszesital": category.SelectedIndex = 2; break;
-                    case "Kozmetikum": category.SelectedIndex = 3; break;
-                }
+                product = ProductList[index];
+                
             }
             catch
             {
-                name.Text = "";
-                itemNum.Text = "";
-                stock.Text = "";
-
+                product = new Product();
+            }
+            name.Text = product.Name;
+            itemNum.Text = product.ItemNum;
+            stock.Text = product.Stock;
+            switch (product.Category)
+            {
+                case "Élelmiszer": category.SelectedIndex = 0; break;
+                case "Háztartási vegyiáru": category.SelectedIndex = 1; break;
+                case "Szeszesital": category.SelectedIndex = 2; break;
+                case "Kozmetikum": category.SelectedIndex = 3; break;
             }
         }
         

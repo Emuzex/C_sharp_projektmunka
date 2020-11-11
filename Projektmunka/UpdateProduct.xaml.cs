@@ -49,7 +49,7 @@ namespace Projektmunka
         {
             ListView lv = sender as ListView;
             // ezt be kell fejezni a Controllerben, meg a .xaml-ben, de már a faszom tele van vele, lefekszem a picsába
-            ctrl.setFields(lv.SelectedIndex, prodName, prodNum, stock, category);
+            ctrl.setFields(lv.SelectedIndex, prodName, prodNum, stock, category, unit);
         }
     }
 }

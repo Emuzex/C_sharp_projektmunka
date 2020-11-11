@@ -9,6 +9,6 @@
     <Grid>
         
         <Button Width="100" Height="30" Name="b1" Click="b1_Click" Margin="184,38,233,251">Termék hozzáadása</Button>
-        <Button Width="100" Height="30" Name="b2" Click="b2_Click" Margin="184,86,233,203">Termék szerkesztése</Button>
+        <Button Width="100" Height="30" Name="b2" Click="b2_Click" Margin="184,86,233,203">Keresés</Button>
     </Grid>
 </Window>

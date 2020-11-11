@@ -37,7 +37,7 @@ namespace Projektmunka
         {
             UpdateProduct upd = new UpdateProduct();
             upd.Show();
-            
+            this.Close();
         }
     }
 }

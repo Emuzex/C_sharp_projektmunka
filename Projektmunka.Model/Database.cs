@@ -9,15 +9,17 @@ namespace Projektmunka.Model
 {
     public class Database
     {
-
+        public MySqlConnection conn;
         #region Private properties
         private string ConnStr = "server=145.236.9.97;user=csharp;database=csharpprojekt;port=3306;password=Csharpisfun!97";
+        
         #endregion
+        public Database() {
+             conn = new MySqlConnection(ConnStr);
+        }
 
         public void addNewProduct(string productName, string itemNum, string stock, string price, string category, string unit)
         {
-
-            MySqlConnection conn = new MySqlConnection(ConnStr);
 
             try
             {
@@ -46,13 +48,13 @@ namespace Projektmunka.Model
         }
         public void updateProduct()
         {
-            MySqlConnection conn = new MySqlConnection(ConnStr);
+            
             try
             {
 
                 conn.Open();
 
-                string sql = "UPDATE products SET ('{0}', '{1}', '{2}', '0', '{3}');";
+                string sql = "UPDATE products SET ('{0}' = '{1}');";
                 MySqlCommand cmd = new MySqlCommand(String.Format(sql, 1, 2, 3), conn);
                 MySqlDataReader rdr = cmd.ExecuteReader();
 
@@ -71,38 +73,7 @@ namespace Projektmunka.Model
 
         }
 
-        public StringBuilder searchProducts(string keyword)
-        {
-            MySqlConnection conn = new MySqlConnection(ConnStr);
-            StringBuilder returnValue = new StringBuilder();
-            try
-            {
-
-                conn.Open();
-                
-                string sql = "SELECT * FROM products WHERE name LIKE '%{0}%';";
-                sql = String.Format(sql, keyword);
-                MySqlCommand cmd = new MySqlCommand(sql, conn);
-                MySqlDataReader rdr = cmd.ExecuteReader();
-
-                while (rdr.Read())
-                {
-                    returnValue.Append(rdr[0] + "\n");                   
-                    
-                }
-                
-                rdr.Close();
-                
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-            
-            conn.Close();
-            return returnValue;
-
-        }
+        
 
     }
 }

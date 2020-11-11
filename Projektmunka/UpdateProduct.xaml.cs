@@ -13,24 +13,43 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Projektmunka.Controller;
 
+
 namespace Projektmunka
 {
+    
     /// <summary>
     /// Interaction logic for UpdateProduct.xaml
     /// </summary>
     public partial class UpdateProduct : Window
     {
         UpdateProductController ctrl = new UpdateProductController();
-
         public UpdateProduct()
         {
+            
             InitializeComponent();
+            
         }
 
         private void searchBox_KeyUp(object sender, KeyEventArgs e)
         {
             TextBox tb = sender as TextBox;
-            ctrl.searchDatabase(tb, searchResults);
+            ctrl.searchDatabase(tb, results);
+            
+            
+        }
+
+        private void edit_Click(object sender, RoutedEventArgs e)
+        {
+
+            
+            
+        }
+
+        private void results_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ListView lv = sender as ListView;
+            // ezt be kell fejezni a Controllerben, meg a .xaml-ben, de már a faszom tele van vele, lefekszem a picsába
+            ctrl.setFields(lv.SelectedIndex, prodName, prodNum, stock, category);
         }
     }
 }

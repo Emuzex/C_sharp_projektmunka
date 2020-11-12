@@ -31,7 +31,7 @@ namespace Projektmunka
         {
             AddProductWindow prodWindow = new AddProductWindow();
             prodWindow.Show();
-            
+            this.Close();
         }
         private void b2_Click(object sender, RoutedEventArgs e)
         {

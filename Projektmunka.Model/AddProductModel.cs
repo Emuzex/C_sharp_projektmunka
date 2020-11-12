@@ -7,9 +7,9 @@ using MySql.Data;
 using MySql.Data.MySqlClient;
 namespace Projektmunka.Model
 {
-    class AddProductModel
+    public class AddProductModel
     {
-        public void addNewProduct(string productName, string itemNum, string stock, string price, string category, string unit)
+        public void addNewProduct(string productName, string itemNum, string stock, string price, string category, string unit, string unitsize)
         {
             Database db = new Database();
             try
@@ -17,8 +17,8 @@ namespace Projektmunka.Model
 
                 db.conn.Open();
 
-                string sql = "INSERT INTO products VALUES ('{0}', '{1}', '{2}', '0', '{3}', '{4}', '{5}');";
-                sql = String.Format(sql, productName, itemNum, stock, price, category, unit);
+                string sql = "INSERT INTO products VALUES ('{0}', '{1}', '{2}', '0', '{3}', '{4}', '{5}', '{6}');";
+                sql = String.Format(sql, productName, itemNum, stock, price, category, unit, unitsize);
                 Console.WriteLine(sql);
                 MySqlCommand cmd = new MySqlCommand(sql, db.conn);
                 MySqlDataReader rdr = cmd.ExecuteReader();

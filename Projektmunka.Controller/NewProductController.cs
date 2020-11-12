@@ -45,12 +45,12 @@ namespace Projektmunka.Controller
 
         }
         
-        public void submitData(TextBox prodName, TextBox stockNum, TextBox itemNum, TextBox itemPrice, Button submit, ComboBox category, ComboBox unit) {
-            TextBox[] array = { prodName, stockNum, itemNum, itemPrice };
+        public void submitData(TextBox prodName, TextBox stockNum, TextBox itemNum, TextBox itemPrice, Button submit, ComboBox category, ComboBox unit, TextBox unitSize) {
+            TextBox[] array = { prodName, stockNum, itemNum, itemPrice, unitSize };
             
             submit.IsEnabled = false;
-            Database db = new Database();
-            db.addNewProduct(prodName.Text, itemNum.Text, stockNum.Text, itemPrice.Text, category.Text, unit.Text);
+            AddProductModel model = new AddProductModel();
+            model.addNewProduct(prodName.Text, itemNum.Text, stockNum.Text, itemPrice.Text, category.Text, unit.Text, unitSize.Text);
             foreach (TextBox tb in array)
             {
                 tb.Text = "";

@@ -5,12 +5,210 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projektmunka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="768" Width="1024">
+        Title="KisBót Készletnyilvántartó" 
+        SizeToContent="WidthAndHeight"
+        ResizeMode="NoResize"
+        >
+    <Window.Resources>
+
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="RoundedButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" CornerRadius="10" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#FF0DC3C3"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+
+
+
     <Grid>
-        
-        <Button Width="100" Height="30" Name="b1" Click="b1_Click" Margin="184,38,233,251">Termék hozzáadása</Button>
-        <Button Width="100" Height="30" Name="b2" Click="b2_Click" Margin="184,86,233,203">Keresés</Button>
-      
-            
+        <Grid>
+            <TabControl>
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Keresés" Height="20" Width="42"/>
+                        </StackPanel>
+                    </TabItem.Header>
+                    <StackPanel Orientation="Vertical">
+
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                            <Label>Kereső</Label>
+                            <TextBox Name="searchBox" KeyUp="searchBox_KeyUp" Width="300px" ></TextBox>
+                        </StackPanel>
+
+
+                        <ListView SelectionChanged="results_SelectionChanged" Name="results" Height="120px" Margin="15,20,15,20" HorizontalAlignment="Center" >
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Termék neve" Width="120" DisplayMemberBinding="{Binding Name}" />
+                                    <GridViewColumn Header="Cikkszám" Width="200" DisplayMemberBinding="{Binding ItemNum}" />
+                                    <GridViewColumn Header="Készlet" Width="100" DisplayMemberBinding="{Binding Stock}" />
+                                    <GridViewColumn Header="Ár" Width="60" DisplayMemberBinding="{Binding Price}" />
+                                    <GridViewColumn Header="Leárazás" Width="100" DisplayMemberBinding="{Binding Discount}" />
+                                    <GridViewColumn Header="Kategória" Width="100" DisplayMemberBinding="{Binding Category}" />
+                                    <GridViewColumn Header="Egység" Width="100" DisplayMemberBinding="{Binding Unit}" />
+                                    <GridViewColumn Header="Egységnyi méret" Width="120" DisplayMemberBinding="{Binding UnitSize}" />
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                            <Label>Terméknév:</Label>
+                            <TextBox Name="prodName1" Width="200px"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                            <Label>Cikkszám:</Label>
+                            <TextBox Name="prodNum1" Width="200px"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                            <Label>Darabszám</Label>
+                            <TextBox Name="stock1" Width="200px"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                            <Label>Fogyasztói ár:</Label>
+                            <TextBox Name="price1" Width="200px"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                            <Label>Kategória:</Label>
+                            <ComboBox Name="category1" Width="200px" RenderTransformOrigin="0.5,0.5">
+                                <ComboBoxItem>Élelmiszer</ComboBoxItem>
+                                <ComboBoxItem>Háztartási vegyiáru</ComboBoxItem>
+                                <ComboBoxItem>Szeszesital</ComboBoxItem>
+                                <ComboBoxItem>Kozmetikum</ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                            <Label>Mértékegység</Label>
+                            <ComboBox Name="unit1" Width="200px"  RenderTransformOrigin="0.5,0.5">
+                                <ComboBoxItem>db</ComboBoxItem>
+                                <ComboBoxItem>g</ComboBoxItem>
+                                <ComboBoxItem>kg</ComboBoxItem>
+                                <ComboBoxItem>l</ComboBoxItem>
+                                <ComboBoxItem>ml</ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+                        <Button Name="edit" Click="edit_Click" Width="100px" HorizontalAlignment="Center"  Margin="20,20,20,20" Content="Szerkesztés" Style="{DynamicResource RoundedButtonStyle}"></Button>
+                    </StackPanel>
+                </TabItem>
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Termék hozzáadás" Height="20" Width="100"/>
+                        </StackPanel>
+                    </TabItem.Header>
+                    <StackPanel Orientation="Vertical" Margin="5,10,5,10">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Label >Termék neve</Label>
+                            <TextBox Name="prodName2" Width="200px" KeyUp="tb_KeyUp"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                            <Label Content="Cikkszám" RenderTransformOrigin="0.5,0.5"  >
+                                <Label.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.839"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Label.RenderTransform>
+                            </Label>
+                            <TextBox x:Name="itemNum2" Width="200px" KeyUp="tb_KeyUp"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                            <Label  >Darabszám</Label>
+                            <TextBox Name="stockNum2" Width="200px" KeyUp="tb_KeyUp"></TextBox>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                            <Label  >Fogyasztói ár</Label>
+                            <TextBox Name="itemPrice2" Width="200px" KeyUp="tb_KeyUp"></TextBox>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                            <Label  >Kategória</Label>
+                            <ComboBox Name="category2"  Width="200px" RenderTransformOrigin="0.5,0.5">
+                                <ComboBoxItem IsSelected="True">Élelmiszer</ComboBoxItem>
+                                <ComboBoxItem>Háztartási vegyiáru</ComboBoxItem>
+                                <ComboBoxItem>Szeszesital</ComboBoxItem>
+                                <ComboBoxItem>Kozmetikum</ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                            <Label >Mértékegység</Label>
+                            <ComboBox Name="unit2"  Width="200px" RenderTransformOrigin="0.5,0.5">
+                                <ComboBoxItem IsSelected="True">db</ComboBoxItem>
+                                <ComboBoxItem>g</ComboBoxItem>
+                                <ComboBoxItem>kg</ComboBoxItem>
+                                <ComboBoxItem>l</ComboBoxItem>
+                                <ComboBoxItem>ml</ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,10" HorizontalAlignment="Center">
+                            <Label >Kiszerelés</Label>
+                            <TextBox Name="unitMeasure2" Width="200px" KeyUp="tb_KeyUp"/>
+                        </StackPanel>
+                        <Button Name="submit2" Width="100px"  HorizontalAlignment="Center" Click="submit_Click" Style="{DynamicResource RoundedButtonStyle}">Hozzáad</Button>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+        </Grid>
     </Grid>
 </Window>

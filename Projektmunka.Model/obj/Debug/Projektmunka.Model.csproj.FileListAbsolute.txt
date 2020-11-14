@@ -32,3 +32,17 @@ C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.csprojResolveAssemblyReference.cache
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.dll
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.pdb
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\Projektmunka.Model.dll
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\Projektmunka.Model.pdb
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.csprojAssemblyReference.cache
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.csproj.CoreCompileInputs.cache
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.csproj.CopyComplete
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.dll
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.pdb
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\Projektmunka.Model.dll
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\Projektmunka.Model.pdb
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.csprojAssemblyReference.cache
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.csproj.CoreCompileInputs.cache
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.csproj.CopyComplete
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.dll
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.pdb

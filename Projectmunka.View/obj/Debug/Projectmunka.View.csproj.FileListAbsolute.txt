@@ -1,0 +1,15 @@
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\bin\Debug\Projectmunka.View.exe.config
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\bin\Debug\Projectmunka.View.exe
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\bin\Debug\Projectmunka.View.pdb
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\obj\Debug\Projectmunka.View.csprojAssemblyReference.cache
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\obj\Debug\MainWindow.g.cs
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\obj\Debug\App.g.cs
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\obj\Debug\Projectmunka.View_MarkupCompile.cache
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\obj\Debug\Projectmunka.View_MarkupCompile.lref
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\obj\Debug\MainWindow.baml
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\obj\Debug\Projectmunka.View.g.resources
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\obj\Debug\Projectmunka.View.Properties.Resources.resources
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\obj\Debug\Projectmunka.View.csproj.GenerateResource.cache
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\obj\Debug\Projectmunka.View.csproj.CoreCompileInputs.cache
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\obj\Debug\Projectmunka.View.exe
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projectmunka.View\obj\Debug\Projectmunka.View.pdb

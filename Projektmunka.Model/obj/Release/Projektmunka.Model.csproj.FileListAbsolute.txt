@@ -1,0 +1,2 @@
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka.Model\obj\Release\Projektmunka.Model.csprojAssemblyReference.cache
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka.Model\obj\Release\Projektmunka.Model.csproj.CoreCompileInputs.cache

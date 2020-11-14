@@ -66,3 +66,45 @@ C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csproj.GenerateResource.Cache
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\UpdateProduct.g.cs
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\UpdateProduct.baml
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.exe.config
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.exe
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.pdb
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.Controller.dll
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.Model.dll
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.Controller.pdb
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.Model.pdb
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csprojAssemblyReference.cache
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\MainWindow.g.cs
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\App.g.cs
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka_Content.g.cs
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka_MarkupCompile.cache
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka_MarkupCompile.lref
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\MainWindow.baml
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.g.resources
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.Properties.Resources.resources
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csproj.GenerateResource.cache
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csproj.CoreCompileInputs.cache
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csproj.CopyComplete
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.exe
+C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.pdb
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.exe.config
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.exe
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.pdb
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.Controller.dll
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.Model.dll
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.Controller.pdb
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.Model.pdb
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csprojAssemblyReference.cache
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\MainWindow.g.cs
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\App.g.cs
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka_Content.g.cs
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka_MarkupCompile.cache
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka_MarkupCompile.lref
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\MainWindow.baml
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.g.resources
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.Properties.Resources.resources
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csproj.GenerateResource.cache
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csproj.CoreCompileInputs.cache
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csproj.CopyComplete
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.exe
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.pdb

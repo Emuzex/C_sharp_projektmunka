@@ -1,0 +1,6 @@
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Release\Projektmunka.csprojAssemblyReference.cache
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Release\MainWindow.g.cs
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Release\App.g.cs
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Release\Projektmunka_Content.g.cs
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Release\Projektmunka_MarkupCompile.cache
+C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Release\Projektmunka_MarkupCompile.lref

@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using Projektmunka.Model;
 using MySql.Data;
 using MySql.Data.MySqlClient;
+using Projektmunka.Controller;
+
 namespace Projektmunka
 {
     /// <summary>
@@ -22,22 +24,49 @@ namespace Projektmunka
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+        UpdateProductController ctrl1 = new UpdateProductController();
+        NewProductController ctrl2 = new NewProductController();
         public MainWindow()
         {
+            
             InitializeComponent();
         }
+        
+        private void searchBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            TextBox tb = sender as TextBox;
+            ctrl1.searchDatabase(tb, results);
+            
+            
+        }
 
-        private void b1_Click(object sender, RoutedEventArgs e)
+        private void edit_Click(object sender, RoutedEventArgs e)
         {
-            AddProductWindow prodWindow = new AddProductWindow();
-            prodWindow.Show();
-            this.Close();
+
+            
+            
         }
-        private void b2_Click(object sender, RoutedEventArgs e)
+
+        private void results_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            UpdateProduct upd = new UpdateProduct();
-            upd.Show();
-            this.Close();
+            ListView lv = sender as ListView;
+            // ezt be kell fejezni a Controllerben, meg a .xaml-ben, de már a faszom tele van vele, lefekszem a picsába
+            ctrl1.setFields(lv.SelectedIndex, prodName1, prodNum1, stock1, category1, unit1);
         }
+        private void tb_KeyUp(object sender, KeyEventArgs e)
+        {
+            
+            ctrl2.validateTextInput(prodName2, stockNum2, itemNum2, itemPrice2, unitMeasure2, submit2);
+            
+        }
+
+        private void submit_Click(object sender, RoutedEventArgs e)
+        {
+            ctrl2.submitData(prodName2, stockNum2, itemNum2, itemPrice2, submit2, category2, unit2, unitMeasure2);
+        }
+
     }
+
 }
+

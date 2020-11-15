@@ -12,7 +12,7 @@ namespace Projektmunka.Controller
 {
     public class NewProductController
     {
-        
+        public AddProductModel Model = new AddProductModel();
         public void validateTextInput(TextBox prodName, TextBox stockNum, TextBox itemNum, TextBox itemPrice, TextBox unitMeasurement, Button submit)
         {
             if ((validateNum(stockNum) && validateNum(itemPrice) && validateNum(unitMeasurement)) && !(string.IsNullOrEmpty(prodName.Text) && string.IsNullOrEmpty(stockNum.Text) && string.IsNullOrEmpty(itemNum.Text) && string.IsNullOrEmpty(itemPrice.Text) && string.IsNullOrEmpty(unitMeasurement.Text)))
@@ -23,7 +23,7 @@ namespace Projektmunka.Controller
             
 
         }
-
+        // number validation
         public bool validateNum(TextBox toBeParsed)
         {
             bool isANum = false;
@@ -37,7 +37,7 @@ namespace Projektmunka.Controller
                 }
                 catch
                 {
-                    
+                    // sets font colour to red if invalid
                     toBeParsed.Foreground = System.Windows.Media.Brushes.Red;
                 }
             }
@@ -46,11 +46,13 @@ namespace Projektmunka.Controller
         }
         
         public void submitData(TextBox prodName, TextBox stockNum, TextBox itemNum, TextBox itemPrice, Button submit, ComboBox category, ComboBox unit, TextBox unitSize) {
+            // initializes an array literal with the TextBoxes
             TextBox[] array = { prodName, stockNum, itemNum, itemPrice, unitSize };
-            
+            // disables submit button
             submit.IsEnabled = false;
-            AddProductModel model = new AddProductModel();
-            model.addNewProduct(prodName.Text, itemNum.Text, stockNum.Text, itemPrice.Text, category.Text, unit.Text, unitSize.Text);
+            
+            Model.addNewProduct(prodName.Text, itemNum.Text, stockNum.Text, itemPrice.Text, category.Text, unit.Text, unitSize.Text);
+            // clears text of all TextBoxes
             foreach (TextBox tb in array)
             {
                 tb.Text = "";

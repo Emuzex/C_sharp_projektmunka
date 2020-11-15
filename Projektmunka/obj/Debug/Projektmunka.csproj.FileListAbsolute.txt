@@ -36,7 +36,6 @@ C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.pdb
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csprojResolveAssemblyReference.cache
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csproj.Projektmunka.exe.config
-C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\AddProductWindow.g.cs
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\MainWindow.g.cs
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\App.g.cs
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka_MarkupCompile.cache
@@ -59,13 +58,10 @@ C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.Controller.pdb
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.Model.pdb
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\MySql.Data.xml
-C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\AddProductWindow.baml
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\MainWindow.baml
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.g.resources
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.Properties.Resources.resources
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csproj.GenerateResource.Cache
-C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\UpdateProduct.g.cs
-C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\UpdateProduct.baml
 C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.exe.config
 C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.exe
 C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka\Projektmunka\bin\Debug\Projektmunka.pdb
@@ -108,3 +104,4 @@ C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\P
 C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.csproj.CopyComplete
 C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.exe
 C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.pdb
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka_Content.g.cs

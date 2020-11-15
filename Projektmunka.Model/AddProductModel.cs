@@ -23,11 +23,7 @@ namespace Projektmunka.Model
                 MySqlCommand cmd = new MySqlCommand(sql, db.conn);
                 MySqlDataReader rdr = cmd.ExecuteReader();
 
-                /*while (rdr.Read())
-                {
-                    Console.WriteLine(rdr[0] + " -- " + rdr[1]);
-                }
-                rdr.Close();*/
+                
             }
             catch (Exception ex)
             {

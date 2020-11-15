@@ -44,7 +44,7 @@ namespace Projektmunka
         private void edit_Click(object sender, RoutedEventArgs e)
         {
 
-            
+            ctrl1.update(results, prodName1, prodNum1, stock1, category1, discount, price1, unit1, unitSize, searchBox);
             
         }
 
@@ -52,7 +52,8 @@ namespace Projektmunka
         {
             ListView lv = sender as ListView;
             // ezt be kell fejezni a Controllerben, meg a .xaml-ben, de már a faszom tele van vele, lefekszem a picsába
-            ctrl1.setFields(lv.SelectedIndex, prodName1, prodNum1, stock1, category1, unit1);
+            
+            ctrl1.setFields(lv, prodName1, prodNum1, stock1, category1, discount, price1, unit1, unitSize);
         }
         private void tb_KeyUp(object sender, KeyEventArgs e)
         {

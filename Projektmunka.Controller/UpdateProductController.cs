@@ -88,9 +88,12 @@ namespace Projektmunka.Controller
             switch (product.Category)
             {
                 case "Élelmiszer": category.SelectedIndex = 0; break;
-                case "Háztartási vegyiáru": category.SelectedIndex = 1; break;
-                case "Szeszesital": category.SelectedIndex = 2; break;
-                case "Kozmetikum": category.SelectedIndex = 3; break;
+                case "Szeszesital": category.SelectedIndex = 1; break;
+                case "Ital": category.SelectedIndex = 2; break;
+                case "Szépség- és babaápolás": category.SelectedIndex = 3; break;
+                case "Háztartási vegyiáru": category.SelectedIndex = 4; break;
+                case "Állateledel": category.SelectedIndex = 5; break;
+                case "Szórakozás": category.SelectedIndex = 6; break;
             }
             switch (product.Unit)
             {

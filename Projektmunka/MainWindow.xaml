@@ -126,10 +126,13 @@
                         <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
                             <Label>Kategória:</Label>
                             <ComboBox Name="category1" Width="200px" RenderTransformOrigin="0.5,0.5">
-                                <ComboBoxItem>Élelmiszer</ComboBoxItem>
-                                <ComboBoxItem>Háztartási vegyiáru</ComboBoxItem>
+                                <ComboBoxItem IsSelected="True">Élelmiszer</ComboBoxItem>
                                 <ComboBoxItem>Szeszesital</ComboBoxItem>
-                                <ComboBoxItem>Kozmetikum</ComboBoxItem>
+                                <ComboBoxItem>Ital</ComboBoxItem>
+                                <ComboBoxItem>Szépség- és babaápolás</ComboBoxItem>
+                                <ComboBoxItem>Háztartási vegyiáru</ComboBoxItem>
+                                <ComboBoxItem>Állateledel</ComboBoxItem>
+                                <ComboBoxItem>Szórakozás</ComboBoxItem>
                             </ComboBox>
                         </StackPanel>
                         
@@ -202,9 +205,12 @@
                             <Label  >Kategória</Label>
                             <ComboBox Name="category2"  Width="200px" RenderTransformOrigin="0.5,0.5">
                                 <ComboBoxItem IsSelected="True">Élelmiszer</ComboBoxItem>
-                                <ComboBoxItem>Háztartási vegyiáru</ComboBoxItem>
                                 <ComboBoxItem>Szeszesital</ComboBoxItem>
-                                <ComboBoxItem>Kozmetikum</ComboBoxItem>
+                                <ComboBoxItem>Ital</ComboBoxItem>
+                                <ComboBoxItem>Szépség- és babaápolás</ComboBoxItem>
+                                <ComboBoxItem>Háztartási vegyiáru</ComboBoxItem>
+                                <ComboBoxItem>Állateledel</ComboBoxItem>
+                                <ComboBoxItem>Szórakozás</ComboBoxItem>
                             </ComboBox>
                         </StackPanel>
 

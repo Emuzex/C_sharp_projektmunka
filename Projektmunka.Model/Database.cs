@@ -12,7 +12,7 @@ namespace Projektmunka.Model
     {
         public MySqlConnection conn;
         #region Private properties
-        private string ConnStr = "server=localhost;user=csharp;database=csharpprojekt;port=3306;password=Csharpisfun!97";
+        private string ConnStr = "server=localhost;user=root;database=csharpprojekt;port=3306;";
         
         #endregion
         public Database() {

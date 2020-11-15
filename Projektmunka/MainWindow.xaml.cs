@@ -43,13 +43,9 @@ namespace Projektmunka
 
         private void edit_Click(object sender, RoutedEventArgs e)
         {
-            
+
             ctrl1.update(results, prodName1, prodNum1, stock1, category1, discount, price1, unit1, unitSize, searchBox);
             
-            
-            
-
-
         }
 
         private void results_SelectionChanged(object sender, SelectionChangedEventArgs e)

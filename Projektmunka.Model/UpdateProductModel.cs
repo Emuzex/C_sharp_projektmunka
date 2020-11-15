@@ -42,7 +42,6 @@ namespace Projektmunka.Model
         // this method needs to be revised, as it does not work as intended
         public void update(string name, string prodNum, string stock, string unitSize, string unit, string category, string price)
         {
-            
             try
             {
 

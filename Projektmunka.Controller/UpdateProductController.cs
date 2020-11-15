@@ -101,15 +101,17 @@ namespace Projektmunka.Controller
                 case "ml": unitMeasure.SelectedIndex = 4; break;
                 
             }
+            
         }
         public void update(ListView lv, TextBox name, TextBox itemNum, TextBox stock, ComboBox category, ComboBox discount, TextBox price, ComboBox unitMeasure, TextBox unitSize, TextBox searchBox) {
+
             model.update(name.Text, itemNum.Text, stock.Text, unitSize.Text, unitMeasure.Text, category.Text, price.Text);
+            
             // this is lousily implemented as of now, but clearing the result list on update is still better (at this stage) than the results showing
             // outdated data... will get back to this later
             lv.ItemsSource = null;
             searchBox.Text = "";
-
-
+            
 
 
         }

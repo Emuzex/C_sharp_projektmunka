@@ -123,7 +123,7 @@ namespace Projektmunka.Controller
             }
         }
         public void update(ListView lv, TextBox name, TextBox itemNum, TextBox stock, ComboBox category, ComboBox discount, TextBox price, ComboBox unitMeasure, TextBox unitSize, TextBox searchBox, TextBox id) {
-            model.update(name.Text, itemNum.Text, stock.Text, unitSize.Text, unitMeasure.Text, category.Text, price.Text, id.Text);
+            model.update(name.Text.Replace("*", ""), itemNum.Text, stock.Text, unitSize.Text, unitMeasure.Text, category.Text, price.Text, id.Text, discount.Text);
             clear(lv, searchBox);
 
 

@@ -40,14 +40,14 @@ namespace Projektmunka.Model
 
         }
         // this method needs to be revised, as it does not work as intended
-        public void update(string name, string prodNum, string stock, string unitSize, string unit, string category, string price, string id)
+        public void update(string name, string prodNum, string stock, string unitSize, string unit, string category, string price, string id, string discount)
         {
             try
             {
 
                 db.conn.Open();
-                string sql = "UPDATE products SET name='{0}', itemnum='{1}', stock='{2}', price='{3}', category='{4}', unit='{5}', unit_size='{6}' WHERE id='{7}';";
-                sql = String.Format(sql, name, prodNum, stock, price, category, unit, unitSize, id);
+                string sql = "UPDATE products SET name='{0}', itemnum='{1}', stock='{2}', price='{3}', category='{4}', unit='{5}', unit_size='{6}', discount={7} WHERE id='{8}';";
+                sql = String.Format(sql, name, prodNum, stock, price, category, unit, unitSize, discount, id);
                 MySqlCommand cmd = new MySqlCommand(sql, db.conn);
                 cmd.ExecuteReader();
 

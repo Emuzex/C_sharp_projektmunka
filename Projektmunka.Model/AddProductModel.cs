@@ -9,6 +9,7 @@ namespace Projektmunka.Model
 {
     public class AddProductModel
     {
+        
         public void addNewProduct(string productName, string itemNum, string stock, string price, string category, string unit, string unitsize)
         {
             Database db = new Database();

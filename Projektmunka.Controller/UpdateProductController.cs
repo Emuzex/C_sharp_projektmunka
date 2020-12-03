@@ -20,6 +20,7 @@ namespace Projektmunka.Controller
         public string Discount { get; set; }
         public string Unit { get; set; }
         public string UnitSize { get; set; }
+        public string Id { get; set; }
         
     }
     public class UpdateProductController
@@ -42,28 +43,36 @@ namespace Projektmunka.Controller
                 // fills ProductList with new Product structs, with corresponding data from the columns of the DataTable
                 foreach (DataRow item in dt.Rows)
                 {
+                    string name = "";
+                    if (Int32.Parse(item["stock"].ToString()) < 10)
+                    {
+                        name = String.Format("{0}{1}", "*", item["name"].ToString());
+                    }
+                    else name = String.Format("{0}", item["name"].ToString());
                     ProductList.Add(new Product
                     {
-                        Name = item["name"].ToString(),
+                        
+                        Name = name,
                         ItemNum = item["itemnum"].ToString(),
                         Price = item["price"].ToString(),
                         Discount = item["discount"].ToString(),
                         Category = item["category"].ToString(),
                         Stock = item["stock"].ToString(),
                         Unit = item["unit"].ToString(),
-                        UnitSize = item["unit_size"].ToString()
+                        UnitSize = item["unit_size"].ToString(),
+                        Id = item["id"].ToString()
                     });
 
 
                 }
                 // sets the ListView's ItemsSource
                 result.ItemsSource = ProductList;
-
+                
             }
             
 
         }
-        public void setFields(ListView lv, TextBox name, TextBox itemNum, TextBox stock, ComboBox category, ComboBox discount, TextBox price, ComboBox unitMeasure, TextBox unitSize)
+        public void setFields(ListView lv, TextBox name, TextBox itemNum, TextBox stock, ComboBox category, ComboBox discount, TextBox price, ComboBox unitMeasure, TextBox unitSize, TextBox id)
         {
             // takes the index of the currently selected item in the ListView
             int index = lv.SelectedIndex;
@@ -85,6 +94,7 @@ namespace Projektmunka.Controller
             stock.Text = product.Stock;
             price.Text = product.Price;
             unitSize.Text = product.UnitSize;
+            id.Text = product.Id;
             switch (product.Category)
             {
                 case "Élelmiszer": category.SelectedIndex = 0; break;
@@ -104,20 +114,36 @@ namespace Projektmunka.Controller
                 case "ml": unitMeasure.SelectedIndex = 4; break;
                 
             }
+            switch (product.Discount)
+            {
+                case "0":discount.SelectedIndex = 0; break;
+                case "15": discount.SelectedIndex = 1; break;
+                case "25": discount.SelectedIndex = 2; break;
+                case "50": discount.SelectedIndex = 3; break;
+            }
         }
-        public void update(ListView lv, TextBox name, TextBox itemNum, TextBox stock, ComboBox category, ComboBox discount, TextBox price, ComboBox unitMeasure, TextBox unitSize, TextBox searchBox) {
-            model.update(name.Text, itemNum.Text, stock.Text, unitSize.Text, unitMeasure.Text, category.Text, price.Text);
-            // this is lousily implemented as of now, but clearing the result list on update is still better (at this stage) than the results showing
-            // outdated data... will get back to this later
+        public void update(ListView lv, TextBox name, TextBox itemNum, TextBox stock, ComboBox category, ComboBox discount, TextBox price, ComboBox unitMeasure, TextBox unitSize, TextBox searchBox, TextBox id) {
+            model.update(name.Text, itemNum.Text, stock.Text, unitSize.Text, unitMeasure.Text, category.Text, price.Text, id.Text);
+            clear(lv, searchBox);
+
+
+
+
+        }
+        
+        public bool sell(TextBox quantity, TextBox prodNum, ListView results, TextBox searchBox)
+        {
+            bool retval = false;
+            if (model.sellProduct(quantity.Text, prodNum.Text) > 0) retval = true;
+            
+            clear(results, searchBox);
+            return retval;
+        }
+
+        public void clear(ListView lv, TextBox searchBox)
+        {
             lv.ItemsSource = null;
             searchBox.Text = "";
-
-
-
-
         }
-        
-
-        
     }
 }

@@ -105,3 +105,13 @@ C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\P
 C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.exe
 C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka.pdb
 C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\obj\Debug\Projektmunka_Content.g.cs
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\System.Memory.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\Google.Protobuf.pdb
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\Google.Protobuf.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\Renci.SshNet.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\System.Buffers.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\System.Memory.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

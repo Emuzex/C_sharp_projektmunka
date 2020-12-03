@@ -40,16 +40,14 @@ namespace Projektmunka.Model
 
         }
         // this method needs to be revised, as it does not work as intended
-        public void update(string name, string prodNum, string stock, string unitSize, string unit, string category, string price)
+        public void update(string name, string prodNum, string stock, string unitSize, string unit, string category, string price, string id)
         {
             try
             {
 
                 db.conn.Open();
-                // updates columns with parameters
-                // the structure of the database will have to be revised, since itemnum is the primary key, it cannot be modified
-                string sql = "UPDATE products SET name='{0}', itemnum='{1}', stock='{2}', price='{3}', category='{4}', unit='{5}', unit_size='{6}' WHERE itemnum='{1}';";
-                sql = String.Format(sql, name, prodNum, stock, price, category, unit, unitSize, prodNum);
+                string sql = "UPDATE products SET name='{0}', itemnum='{1}', stock='{2}', price='{3}', category='{4}', unit='{5}', unit_size='{6}' WHERE id='{7}';";
+                sql = String.Format(sql, name, prodNum, stock, price, category, unit, unitSize, id);
                 MySqlCommand cmd = new MySqlCommand(sql, db.conn);
                 cmd.ExecuteReader();
 
@@ -60,5 +58,21 @@ namespace Projektmunka.Model
             }
             db.conn.Close();
         }
+        public int sellProduct(string quantity, string id)
+        {
+            int retvalue = 0;
+            Database db = new Database();
+            db.conn.Open();
+            string sql = "UPDATE products SET stock= stock - {0} WHERE id='{1}' AND stock-{0} >= 0;";
+
+            MySqlCommand cmd = new MySqlCommand(String.Format(sql, quantity, id), db.conn);
+            retvalue = cmd.ExecuteNonQuery();
+            
+
+            db.conn.Close();
+            return retvalue;
+
+        }
     }
+    
 }

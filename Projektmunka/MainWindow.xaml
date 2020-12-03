@@ -99,10 +99,12 @@
                                     <GridViewColumn Header="Kategória" Width="100" DisplayMemberBinding="{Binding Category}" />
                                     <GridViewColumn Header="Egység" Width="100" DisplayMemberBinding="{Binding Unit}" />
                                     <GridViewColumn Header="Egységnyi méret" Width="120" DisplayMemberBinding="{Binding UnitSize}" />
+                                    <GridViewColumn Header="Azonosító" Width="120" DisplayMemberBinding="{Binding Id}" />
                                 </GridView>
+                                
                             </ListView.View>
                         </ListView>
-
+                        <Label Content="A csillaggal jelzett termékek készlete alacsony, új rendelés leadása javasolt."/>
                         <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
                             <Label>Terméknév:</Label>
                             <TextBox Name="prodName1" Width="200px"/>
@@ -114,7 +116,7 @@
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
-                            <Label>Darabszám</Label>
+                            <Label Width="338">Darabszám (eladásnál az eladni kívánt mennyiséget adja meg)</Label>
                             <TextBox Name="stock1" Width="200px"/>
                         </StackPanel>
 
@@ -160,10 +162,23 @@
                                 </Label.RenderTransform>
                             </Label>
                             <TextBox x:Name="unitSize" Width="200px" KeyUp="tb_KeyUp"/>
+                            <TextBox x:Name="id1" Visibility="Hidden"></TextBox>
                         </StackPanel>
-
+                        <StackPanel>
+                            <Label>Leárazás mértéke százalékban
+                            </Label>
+                            <ComboBox Width="200px" Name="discount" Text="0">
+                                <ComboBoxItem IsSelected="True">0</ComboBoxItem>
+                                <ComboBoxItem>15</ComboBoxItem>
+                                <ComboBoxItem>25</ComboBoxItem>
+                                <ComboBoxItem>50</ComboBoxItem>
+                                
+                            </ComboBox>
+                            
+                        </StackPanel>
                         <Button Name="edit" Click="edit_Click" Width="100px" HorizontalAlignment="Center"  Margin="20,20,20,20" Content="Szerkesztés" Style="{DynamicResource RoundedButtonStyle}"></Button>
-                        <ComboBox Name="discount" Text="0"></ComboBox>
+                        <Button Width="100px"  HorizontalAlignment="Center" Click="sell_Click" Style="{DynamicResource RoundedButtonStyle}" Content="Eladás"/>
+                        
                     </StackPanel>
                 </TabItem>
                 <TabItem>
@@ -231,6 +246,38 @@
                         <Button Name="submit2" Width="100px"  HorizontalAlignment="Center" Click="submit_Click" Style="{DynamicResource RoundedButtonStyle}">Hozzáad</Button>
                     </StackPanel>
                 </TabItem>
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Bejelentkezés" Height="20" Width="100"/>
+                        </StackPanel>
+                    </TabItem.Header>
+                    <StackPanel Orientation="Vertical" Margin="5,10,5,10">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Label >Felhasználónév</Label>
+                            <TextBox Name="username" Width="200px" KeyUp="tb_KeyUp"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center">
+                            <Label Content="Jelszó" RenderTransformOrigin="0.5,0.5"  >
+                                <Label.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.839"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Label.RenderTransform>
+                            </Label>
+                            <PasswordBox Name="pass" Width="200px"></PasswordBox>
+                        </StackPanel>
+
+                       
+                        <Button Width="100px"  HorizontalAlignment="Center" Click="login_Click" Style="{DynamicResource RoundedButtonStyle}">Bejelentkezés</Button>
+                    </StackPanel>
+                </TabItem>
+                
+                
+
             </TabControl>
         </Grid>
     </Grid>

@@ -10,6 +10,9 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("obj/debug/projektmunka.csproj.corecompileinputs.cache")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("obj/debug/projektmunka.csprojassemblyreference.cache")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("obj/release/mainwindow.baml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("obj/release/projektmunka.csproj.corecompileinputs.cache")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("obj/release/projektmunka.pdb")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("obj/debug/projektmunka.csproj.corecompileinputs.cache")]
 
 

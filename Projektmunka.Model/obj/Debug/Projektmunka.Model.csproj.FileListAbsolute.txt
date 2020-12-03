@@ -46,3 +46,13 @@ C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka.Model\obj\D
 C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.csproj.CopyComplete
 C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.dll
 C:\Users\Futó Mirkó\source\repos\C_sharp_projektmunka\Projektmunka.Model\obj\Debug\Projektmunka.Model.pdb
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\System.Memory.dll
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\Google.Protobuf.pdb
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\Google.Protobuf.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\Renci.SshNet.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\System.Buffers.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\System.Memory.xml
+C:\Users\Máté\Source\Repos\Emuzex\C_sharp_projektmunka\Projektmunka.Model\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

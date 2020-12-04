@@ -39,11 +39,8 @@ namespace Projektmunka
         
         private void searchBox_KeyUp(object sender, KeyEventArgs e)
         {
-            TextBox tb = sender as TextBox;
             
-            view.populateListview(searchBox, results);
-            
-            
+            view.populateListview(searchBox, results);   
 
         }
 

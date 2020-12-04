@@ -19,17 +19,12 @@ using Projektmunka.Controller;
 
 namespace Projektmunka
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    
     public partial class MainWindow : Window
     {
 
-        bool isAdmin = false;
-        UpdateProductController ctrl1 = new UpdateProductController();
-        NewProductController ctrl2 = new NewProductController();
-        LoginController ctrl3 = new LoginController();
         
+        View view = new View();
         
         public MainWindow()
         {
@@ -45,64 +40,53 @@ namespace Projektmunka
         private void searchBox_KeyUp(object sender, KeyEventArgs e)
         {
             TextBox tb = sender as TextBox;
-            ctrl1.searchDatabase(tb, results);
+            
+            view.populateListview(searchBox, results);
+            
             
 
         }
 
         private void edit_Click(object sender, RoutedEventArgs e)
         {
-
-            ctrl1.update(results, prodName1, prodNum1, stock1, category1, discount, price1, unit1, unitSize, searchBox, id1);
+              view.updateProduct(prodName1, prodNum1, stock1, category1, discount, price1, unit1, unitSize, searchBox, id1, results);
+              view.clear(results, searchBox);
 
         }
 
         private void results_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ListView lv = sender as ListView;
-            
-            ctrl1.setFields(lv, prodName1, prodNum1, stock1, category1, discount, price1, unit1, unitSize, id1);
-            
+         
+            view.setFields(results, prodName1, prodNum1, stock1, category1, discount, price1, unit1, unitSize, id1);
+         
+
         }
         private void tb_KeyUp(object sender, KeyEventArgs e)
         {
             
-            ctrl2.validateTextInput(prodName2, stockNum2, itemNum2, itemPrice2, unitMeasure2, submit2);
+            view.validateTextInput(prodName2, stockNum2, itemNum2, itemPrice2, unitMeasure2, submit2);
             
         }
 
         private void submit_Click(object sender, RoutedEventArgs e)
         {
-            ctrl2.submitData(prodName2, stockNum2, itemNum2, itemPrice2, submit2, category2, unit2, unitMeasure2);
+            view.addNewProduct(prodName2, stockNum2, itemNum2, itemPrice2, submit2, category2, unit2, unitMeasure2);
             
         }
         private void login_Click(object sender, RoutedEventArgs e)
         {
-            bool temp = ctrl3.authenticate(username, pass);
-            if (temp) {
-                username.Text = "";
-                pass.Password = "";
-                MessageBox.Show("Sikeres bejelentkezés");
-                isAdmin = temp;
-                submit2.IsEnabled = true;
-                edit.IsEnabled = true;
-
-            }
-            else MessageBox.Show("Sikertelen bejelentkezés");
+            view.authenticate(username, pass, edit, submit2);
         }
-
         private void sell_Click(object sender, RoutedEventArgs e)
         {
-            if (ctrl1.sell(stock1, id1, results, searchBox))
-            {
-                MessageBox.Show("Sikeres eladás.");
+            view.sell(stock1, id1, results, searchBox);
+        }
+        
 
 
-            }
-            else MessageBox.Show("Sikertelen eladás. A megadott mennyiség valószínűleg nagyobb, mint a raktárkészlet.");
-            
         }
     }
 
-}
+
+
 

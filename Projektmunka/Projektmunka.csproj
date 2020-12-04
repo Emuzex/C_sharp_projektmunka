@@ -112,6 +112,7 @@
     </ApplicationDefinition>
     <Compile Include="obj\Debug\Projektmunka_Content.g.cs" />
     <Compile Include="obj\Debug\Projektmunka_Content.g.i.cs" />
+    <Compile Include="View.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

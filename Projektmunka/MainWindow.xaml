@@ -243,7 +243,7 @@
                             <Label >Kiszerelés</Label>
                             <TextBox Name="unitMeasure2" Width="200px" KeyUp="tb_KeyUp"/>
                         </StackPanel>
-                        <Button Name="submit2" Width="100px"  HorizontalAlignment="Center" Click="submit_Click" Style="{DynamicResource RoundedButtonStyle}">Hozzáad</Button>
+                        <Button x:Name="submit2" Width="100px"  HorizontalAlignment="Center" Click="submit_Click" Style="{DynamicResource RoundedButtonStyle}" Content="Hozzáad"/>
                     </StackPanel>
                 </TabItem>
                 <TabItem>

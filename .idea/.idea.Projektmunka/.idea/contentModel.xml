@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Futó Mirkó\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Futó Mirkó\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Projektmunka.-1861535264.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Futó Mirkó\AppData\Roaming\JetBrains\Rider2020.2\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\Futó Mirkó\RiderProjects\C_sharp_projektmunka" t="IncludeFlat">
+    <e p="C:\Users\futom\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\futom\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Projektmunka.-2024330613.00" t="ExcludeRecursive" />
+    <e p="D:\dev\csharp\projects\desktop\C_sharp_projektmunka" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Projektmunka" t="IncludeRecursive">
         <e p="App.config" t="Include" />
@@ -15,6 +14,8 @@
         <e p="MainWindow.xaml.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
+            <e p="App.g.cs" t="Include" />
+            <e p="MainWindow.g.cs" t="Include" />
             <e p="Projektmunka.csproj.CoreCompileInputs.cache" t="Include" />
             <e p="Projektmunka.csprojAssemblyReference.cache" t="Include" />
             <e p="Projektmunka.exe.config" t="Include" />
@@ -22,12 +23,9 @@
             <e p="Projektmunka_Content.g.i.cs" t="Include" />
           </e>
           <e p="Release" t="Include">
-            <e p="App.g.cs" t="Include" />
             <e p="MainWindow.baml" t="Include" />
-            <e p="MainWindow.g.cs" t="Include" />
             <e p="Projektmunka.csproj.CoreCompileInputs.cache" t="Include" />
             <e p="Projektmunka.pdb" t="Include" />
-            <e p="Projektmunka_Content.g.cs" t="Include" />
           </e>
         </e>
         <e p="packages.config" t="Include" />
@@ -39,9 +37,11 @@
           <e p="Settings.Designer.cs" t="Include" />
           <e p="Settings.settings" t="Include" />
         </e>
+        <e p="View.cs" t="Include" />
       </e>
       <e p="Projektmunka.Controller" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="LoginController.cs" t="Include" />
         <e p="NewProductController.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
@@ -55,6 +55,7 @@
         <e p="AddProductModel.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Database.cs" t="Include" />
+        <e p="LoginModel.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
         <e p="Projektmunka.Model.csproj" t="IncludeRecursive" />
